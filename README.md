@@ -1,13 +1,12 @@
 ###### SK 동반성장 BP사 대상 “React & Vue" 교육
 
-# 프로그래밍 언어
+# UI 라이브러리：React
 
-React, Vue 학습에서 앞서 자주 사용되는 프로그래밍 언어에 대한 이해가 필요합니다.
+React를 웹 브라우저 환경에서 사용하는 방법을 학습합니다.
 
-- __ECMAScript__ (필수)
-- TypeScript (선택)
-
-## ECMAScript NEXT
-
-애플리케이션 개발에서 효율적으로 활용하기 위해서 모던 JavaScript의 새로운 기능을 배우고 적극적으로 활용해야 합니다.  
-여기에서 소개하는 새로운 기능들은 React, Vue 사용을 위해 필히 알아야 할 [JavaScript의 새로운 기능](https://2021.stateofjs.com/ko-KR/features/language)입니다.
+- React v18 `createRoot` API 활용 (NEW)
+- @babel-standalone 외부 모듈 활용 (브라우저 환경)
+- Babel 컴파일러 CLI 활용
+  - @babel/cli 설치 (개발 종속성 모듈)
+  - @babel/plugin-transform-react-js 설치 (트랜스폼 플러그인)
+  - .babelrc 구성 파일 modules 설정 (ES 모듈 그대로 사용)

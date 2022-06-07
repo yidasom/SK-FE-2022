@@ -35,8 +35,60 @@
 
     <div id="app"></div>
 
-    <!-- React + JSX -->
+    <!-- React Component vs. React Element -->
     <script type="text/babel">
+      // React Element
+      // virtual dom node (JSX)
+      const homeLink = (
+        <a href="/">
+          <h1 className="brand">
+            <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React" />  
+          </h1>  
+        </a>
+      );
+      
+      // React Component Type
+      // - class component → React.Element (JSX)
+      class HomeLink extends React.Component {
+        render() {
+          return (
+            <a href="/">
+              <h1 className="brand">
+                <img height={this.props.size} src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React" />  
+              </h1>  
+            </a>
+          );
+        }
+      }
+      
+      // - functional component → React.Element (JSX)
+      // const HomeLink = (props /* { size } */) => {
+      //   return (
+      //     <a href="/">
+      //       <h1 className="brand">
+      //         <img height={props.size} src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React" />  
+      //       </h1>  
+      //     </a>
+      //   );
+      // }
+
+      ReactDOM.render(
+        <React.StrictMode>
+          <React.Fragment>
+            <HomeLink size={12} />
+            <HomeLink size={24} />
+            <HomeLink size={36} />
+            <HomeLink size={48} />
+            <HomeLink size={64} />
+            <HomeLink size={128} />
+          </React.Fragment>
+        </React.StrictMode>
+      , document.getElementById('app'));
+
+    </script>
+
+    <!-- React + JSX -->
+    <!-- <script type="text/babel">
 
       const state = {
         contents: {
@@ -110,7 +162,7 @@
         document.getElementById('app'),
         // () => alert('mounted application')
       )
-    </script>
+    </script> -->
 
     <!-- React Core API -->
     <!-- <script>

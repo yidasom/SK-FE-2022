@@ -8,6 +8,7 @@
     "@babel/cli": "7.17.10",
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.0",
+    "@babel/preset-react": "7.17.12",
     "@testing-library/jest-dom": "5.15.0",
     "@types/jest": "27.0.2",
     "babel-jest": "27.3.1",
@@ -24,7 +25,7 @@
   },
   "scripts": {
     "start": "run-p serve watch:compile",
-    "serve": "npx live-server public",
+    "serve": "live-server public",
     "compile": "babel public/src/*.js -d public/scripts",
     "watch:compile": "npm run compile -- -w",
     "lint": "eslint ./ --ignore-path .gitignore",

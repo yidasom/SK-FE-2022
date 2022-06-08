@@ -1,3 +1,4 @@
+import './utils';
 import './styles/main.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -9,6 +10,6 @@ const root = ReactDOM.createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <RandomCountUp />
+    <RandomCountUp count={0} step={1} />
   </React.StrictMode>
 );

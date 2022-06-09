@@ -1,0 +1,19 @@
+{
+  "name": "sk-fe-2022",
+  "version": "1.0.0",
+  "description": "학습에 앞서 준비해야 할 사항을 안내합니다. (참고: [yamoo9's Preparing for Class](https://yamoo9.github.io/preparing-for-class/))",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamoo9/SK-FE-2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamoo9/SK-FE-2022/issues"
+  },
+  "homepage": "https://github.com/yamoo9/SK-FE-2022#readme"
+}

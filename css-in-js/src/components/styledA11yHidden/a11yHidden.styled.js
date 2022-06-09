@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-// React Styled Component 123
+// React Styled Component
 export const StyledA11yHidden = styled.span`
   overflow: ${(props) => {
     return !props.focusable ? 'auto' : 'hidden';

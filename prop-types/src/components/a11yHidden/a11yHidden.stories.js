@@ -1,8 +1,10 @@
 import { A11yHidden } from './a11yHidden';
+import { detail } from '../../types/detail';
 
 const metaConfig = {
   title: 'atomics/A11yHidden',
   component: A11yHidden,
+  args: A11yHidden.defaultProps,
   argTypes: {
     top: {
       control: {
@@ -70,4 +72,16 @@ ExtendLayout.args = {
     color: 'darkred',
     textDecoration: 'none',
   },
+};
+
+export const InvalidFocusableProp = Template.bind({});
+InvalidFocusableProp.args = {
+  focusable: 'true',
+  external: 102020,
+  className: ['a', 'b'],
+};
+
+export const passiveDetailProp = Template.bind({});
+passiveDetailProp.args = {
+  detail,
 };

@@ -36,9 +36,11 @@ class RandomCountUp extends Component {
     const { count, isComplete } = this.state;
 
     return (
-      <div className="random-count-up">
-        <output style={isComplete ? completedStyle : null}>{count}</output>
-      </div>
+      <>
+        <div className="random-count-up">
+          <output style={isComplete ? completedStyle : null}>{count}</output>
+        </div>
+      </>
     );
   }
 
